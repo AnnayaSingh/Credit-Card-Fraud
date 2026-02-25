@@ -1,157 +1,168 @@
-💳 Credit Card Fraud Detection System
-📌 Project Overview
+<!DOCTYPE html>
+<html>
+<head>
+   
+<h1>💳 Credit Card Fraud Detection System</h1>
 
+<div class="section">
+<h2>📌 Project Overview</h2>
+<p>
 This project detects fraudulent credit card transactions using Machine Learning.
-Since fraud detection datasets are highly imbalanced, SMOTE (Synthetic Minority Oversampling Technique) is applied to balance the dataset and improve fraud detection performance.
+Since fraud detection datasets are highly imbalanced, 
+<span class="highlight">SMOTE (Synthetic Minority Oversampling Technique)</span> 
+is applied to balance the dataset and improve fraud detection performance.
+</p>
+<p>
+The project also includes a professional <span class="highlight">Tkinter GUI Dashboard</span> 
+to display analytics results.
+</p>
+</div>
 
-The project also includes a professional Tkinter GUI Dashboard to display analytics results.
+<div class="section">
+<h2>🎯 Problem Statement</h2>
+<p>Credit card fraud detection is a major financial security challenge.</p>
 
-🎯 Problem Statement
+<h3>The goal of this project is to:</h3>
+<ul>
+<li>Detect fraudulent transactions</li>
+<li>Handle imbalanced dataset</li>
+<li>Improve fraud recall</li>
+<li>Evaluate using Precision & Recall</li>
+<li>Provide business insights through GUI</li>
+</ul>
+</div>
 
-Credit card fraud detection is a major financial security challenge.
+<div class="section">
+<h2>📊 Dataset Description</h2>
+<p>The dataset contains 5000 synthetic transactions with the following features:</p>
 
-#The goal of this project is to:
+<ul>
+<li>Transaction_ID</li>
+<li>Customer_ID</li>
+<li>Transaction_Amount</li>
+<li>Transaction_Time</li>
+<li>Merchant_Category</li>
+<li>Location</li>
+<li>Card_Limit</li>
+<li>Current_Balance</li>
+<li>Payment_Due_Date</li>
+<li>Payment_Date</li>
+<li>Num_Transactions_Last_24hrs</li>
+<li>Is_International</li>
+<li>Fraud_Label</li>
+</ul>
+</div>
 
-1.Detect fraudulent transactions
+<div class="section">
+<h2>⚙️ Technologies Used</h2>
+<ul>
+<li>Python</li>
+<li>Pandas</li>
+<li>NumPy</li>
+<li>Scikit-learn</li>
+<li>Imbalanced-learn (SMOTE)</li>
+<li>Matplotlib & Seaborn</li>
+<li>Tkinter (GUI)</li>
+</ul>
+</div>
 
-2.Handle imbalanced dataset
+<div class="section">
+<h2>🧹 Data Preprocessing</h2>
+<ul>
+<li>Datetime conversion</li>
+<li>Feature Engineering:
+    <ul>
+        <li>On_Time_Payment</li>
+        <li>Exceeded_Limit</li>
+    </ul>
+</li>
+<li>Label Encoding</li>
+<li>SMOTE applied for imbalance handling</li>
+</ul>
+</div>
 
-3.Improve fraud recall
-
-4.Evaluate using Precision & Recall
-
-5.Provide business insights through GUI
-
-📊 Dataset Description
-
--The dataset contains 5000 synthetic transactions with the following features:
-
-->Transaction_ID
-
-->Customer_ID
-
-->Transaction_Amount
-
-->Transaction_Time
-
-->Merchant_Category
-
-->Location
-
-->Card_Limit
-
-->Current_Balance
-
-->Payment_Due_Date
-
-->Payment_Date
-
-->Num_Transactions_Last_24hrs
-
-->Is_International
-
-->Fraud_Label
-
-⚙️ Technologies Used
-
-~Python
-
-~Pandas
-
-~NumPy
-
-~Scikit-learn
-
-~Imbalanced-learn (SMOTE)
-
-~Matplotlib & Seaborn
-
-~Tkinter (GUI)
-
-🧹 Data Preprocessing
-
-~Datetime conversion
-
-~Feature Engineering:
-
--On_Time_Payment
-
--Exceeded_Limit
-
--Label Encoding
-
--SMOTE applied for imbalance handling
-
-🤖 Models Used
-
-1️⃣ Logistic Regression
-2️⃣ Random Forest (Final Model)
-
+<div class="section">
+<h2>🤖 Models Used</h2>
+<ul>
+<li>Logistic Regression</li>
+<li>Random Forest (Final Model)</li>
+</ul>
+<p>
 Random Forest performed better in terms of Recall and Precision.
+</p>
+</div>
 
-📊 Evaluation Metrics
+<div class="section">
+<h2>📊 Evaluation Metrics</h2>
+<ul>
+<li>Confusion Matrix</li>
+<li>Precision</li>
+<li>Recall (Important for fraud detection)</li>
+</ul>
+</div>
 
-1.Confusion Matrix
+<div class="section">
+<h2>📈 Business Questions Answered</h2>
+<ol>
+<li>Fraud cases detected correctly</li>
+<li>Users paying bill on time</li>
+<li>Recall of fraud class</li>
+<li>Users exceeding card limit</li>
+<li>Fraud percentage</li>
+<li>Fraud-to-normal ratio</li>
+<li>Precision of fraud class</li>
+<li>Total transactions</li>
+<li>Dominant class</li>
+<li>Highest transaction value</li>
+</ol>
+</div>
 
-2.Precision
+<div class="section">
+<h2>🖥️ GUI Dashboard</h2>
+<p>The project includes a professional dashboard displaying:</p>
+<ul>
+<li>Model performance metrics</li>
+<li>Fraud statistics</li>
+<li>Customer behavior analytics</li>
+</ul>
+</div>
 
-3.Recall (Important for fraud detection)
+<div class="section">
+<h2>▶️ How to Run the Project</h2>
 
-📈 Business Questions Answered
-
-1.Fraud cases detected correctly
-
-2.Users paying bill on time
-
-3.Recall of fraud class
-
-4.Users exceeding card limit
-
-5.Fraud percentage
-
-6.Fraud-to-normal ratio
-
-7.Precision of fraud class
-
-8.Total transactions
-
-9.Dominant class
-
-10.Highest transaction value
-
-🖥️ GUI Dashboard
-
-The project includes a professional dashboard displaying:
-
-Model performance metrics
-
-Fraud statistics
-
-Customer behavior analytics
-
-▶️ How to Run the Project
-✅ Step 1: Clone the Repository
-git clone https://github.com/AnnayaSingh/credit-card-fraud-detection.git
+<h3>✅ Step 1: Clone the Repository</h3>
+<code>
+git clone https://github.com/AnnayaSingh/credit-card-fraud-detection.git<br>
 cd credit-card-fraud-detection
-✅ Step 2: Install Required Libraries
+</code>
 
-Make sure Python 3.8+ is installed.
+<h3>✅ Step 2: Install Required Libraries</h3>
+<p>Make sure Python 3.8+ is installed.</p>
 
-Install dependencies:
-
+<code>
 pip install pandas numpy scikit-learn imbalanced-learn matplotlib seaborn
+</code>
 
-Tkinter usually comes pre-installed with Python.
+<p>Tkinter usually comes pre-installed with Python. If not:</p>
 
-If not:
-
+<code>
 pip install tk
-✅ Step 3: Place Dataset
+</code>
 
-Make sure the dataset file:
+<h3>✅ Step 3: Place Dataset</h3>
+<p>Ensure the file <span class="highlight">credit_card_fraud_dataset.csv</span> is inside the project folder.</p>
 
-credit_card_fraud_dataset.csv
+<h3>✅ Step 4: Run the Project</h3>
 
-is inside the project folder.
+<code>
+python fraud_dashboard.py
+</code>
 
-✅ Step 4: Run the Project
+<p>
+This will train the model, apply SMOTE, evaluate performance, and open the GUI dashboard.
+</p>
+
+</div>
+
+</body>
+</html>
